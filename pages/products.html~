@@ -92,6 +92,8 @@
 														<a href="#" class="image fit"><img src="../images/nutmeg.jpeg" /></a>
 														<div class="overlay">Nutmeg</div>
 												</div>
+											</div>
+											<div class="row gtr-50">
 												<div class="col-6">
 														<a href="#" class="image fit"><img src="../images/poppyseed.jpeg" /></a>
 														<div class="overlay">Poppy Seed</div>
@@ -104,6 +106,8 @@
 														<a href="#" class="image fit"><img src="../images/fenugreek.jpeg" /></a>
 														<div class="overlay">Fenugreek</div>
 												</div>
+											</div>
+											<div class="row gtr-50">
 												<div class="col-6">
 														<a href="#" class="image fit"><img src="../images/aniseed.jpeg" /></a>
 														<div class="overlay">Ani Seed</div>
