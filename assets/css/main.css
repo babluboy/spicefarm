@@ -1354,10 +1354,10 @@
 		text-decoration: underline;
 	}
 
-		a:hover {
-			text-decoration: none;
-		}
-
+	a:hover {
+		text-decoration: none;
+	}
+	
 	h1, h2, h3, h4, h5, h6 {
 		color: #444;
 		font-weight: 800;
@@ -1852,7 +1852,7 @@
 	}
 
 	#footer-wrapper {
-		padding: 6em 0 8em 0;
+		padding: 0.1em 0 0.1em 0;
 	}
 
 /* Header */
@@ -1933,7 +1933,7 @@
 				background: #444;
 				color: #fff;
 			}
-
+			
 	.dropotron {
 		background: #fff;
 		letter-spacing: 0.025em;
