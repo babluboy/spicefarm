@@ -1899,7 +1899,6 @@
 		top: 0;
 		font-size: 0.9em;
 	}
-
 		#nav ul li {
 			float: left;
 			line-height: 4.5em;
@@ -1936,6 +1935,13 @@
 				color: #fff;
 			}
 			
+			#nav ul li.certification {
+				position: absolute;
+				top: 40px;
+				width: 500px;
+				right: -203px;
+			}
+					
 	.dropotron {
 		background: #fff;
 		letter-spacing: 0.025em;

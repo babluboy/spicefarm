@@ -31,6 +31,17 @@
 			  background-size: cover;
 			  -o-background-size: cover;
 			}
+			#certification div{
+				position: absolute;
+				float: right;
+				top: 0;
+				background-color: yellow;
+				color: yellow
+			}
+			img.certification-image {
+    			border-radius: 8px;
+			}
+			
 		</style>
 	</head>
 	<body class="homepage">
@@ -42,18 +53,32 @@
 
 						<!-- Logo -->
 							<div id="logo">
-								<a href="index.html"><h1>Spice Farm</h1></a><br><span>Exotic spices from Spice Farm</span>
+								<a href="index.html"><h1>Spice Farm</h1></a><br>
+								<span>Exotic spices from Spice Farm</span>
 							</div>
 
 						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="../index.html">Home</a></li>
-									<li><a href="pages/products.html">Products</a></li>
-									<li><a href="pages/contactus.html">Contact Us</a></li>
-								</ul>
-							</nav>
-
+						<div>
+								<nav id="nav">
+									<ul>
+										<li class="current"><a href="../index.html">Home</a></li>
+										<li><a href="pages/products.html">Products</a></li>
+										<li><a href="pages/contactus.html">Contact Us</a></li>
+									</ul>
+								</nav>
+								<nav id="nav">
+									<ul>
+										<li class="certification">
+											<img src="images/icon_bsi.jpg" alt="BSI" style="width:10%" class="certification-image">
+											<img src="images/icon_fda.png" alt="FDA" style="width:10%" class="certification-image">
+											<img src="images/icon_fssa.jpg" alt="FSSA" style="width:10%" class="certification-image">
+											<img src="images/icon_haccp.jpg" alt="HACCP" style="width:10%" class="certification-image">
+											<img src="images/icon_klbd.jpg" alt="KLBD" style="width:10%" class="certification-image">
+										</li>
+									</ul>
+								</nav>
+						</div>
+						
 					</header>
 				</div>
 			<!-- End of Header -->
