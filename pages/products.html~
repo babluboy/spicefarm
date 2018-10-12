@@ -20,6 +20,17 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 		
 		<style>
+		 /* Center website */
+            .main {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            h1 {
+                font-size: 50px;
+                word-break: break-all;
+            }
+
             .row {
                 margin: 10px -16px;
             }
@@ -30,8 +41,10 @@
                 padding: 8px;
             }
 
+            /* Create three equal columns that floats next to each other */
             .column {
                 float: left;
+                width: 33.33%;
                 display: none; /* Hide all elements by default */
             }
 
@@ -42,11 +55,37 @@
                 clear: both;
             }
 
+            /* Content */
+            .content {
+                background-color: white;
+                padding: 10px;
+            }
+
             /* The "show" class is added to the filtered elements */
             .show {
               display: block;
             }
-	    
+
+            /* Style the buttons */
+            .btn {
+              border: none;
+              outline: none;
+              padding: 12px 16px;
+              background-color: white;
+              cursor: pointer;
+            }
+
+            .btn:hover {
+              background-color: #ddd;
+            }
+
+            .btn.active {
+              background-color: #666;
+              color: white;
+            }
+		
+		
+		
 			.overlay {
 				position: relative; 
 				bottom: 0; 
@@ -57,13 +96,12 @@
 				transition: .5s ease;
 				opacity:0;
 				color: white;
-				font: bold 12px Georgia, serif;
-				padding: 10px;
+				font-size: 20px;
+				padding: 20px;
 				text-align: center;
 			}
 			.col-6:hover .overlay {
   				opacity: 1.5;
-  				width: 100%;
 			}
 			
 			body {
@@ -74,6 +112,9 @@
 			  -o-background-size: cover;
 			}
 			
+			.show {
+  				display: block;
+			}	
 		</style>
 		
 	</head>
@@ -114,99 +155,99 @@
 									
 									<div class="dropdown">
 										<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-										  Choose a Product Category
+										  Choose a Category
 										</button>
 										<div class="dropdown-menu">
-										  <a class="dropdown-item" href="#" onclick="filterSelection('OLEORESINS')">Oleoresins</a>
-										  <a class="dropdown-item" href="#" onclick="filterSelection('ESSENTIAL_OILS')">Essential Oils</a>
-										  <a class="dropdown-item" href="#" onclick="filterSelection('NATURAL_COLORS')">Natural Colors</a>
-										   <a class="dropdown-item" href="#" onclick="filterSelection('HERBAL_EXTRACTS')">Herbal Extracts</a>
-										   <a class="dropdown-item" href="#" onclick="filterSelection('WHOLE_AND_GROUND')">Whole and Ground</a>
-										   <a class="dropdown-item" href="#" onclick="filterSelection('FLORAL_EXTRACTS_ABSOLUTES')">Floral Extracts/Absolutes</a>
-										   <a class="dropdown-item" href="#" onclick="filterSelection('TEAS')">Speacility Teas</a>
+										  <a class="dropdown-item" href="#" onclick="filterSelection('spice')">Spice</a>
+										  <a class="dropdown-item" href="#" onclick="filterSelection('nature')">Nature</a>
+										  <a class="dropdown-item" href="#">Link 3</a>
 										</div>
 									</div>
-									
 									<div>&nbsp;</div>
-									
 									<section class="widget thumbnails">
 										<div class="grid">
 											<div class="row">
-												<div class="column WHOLE_AND_GROUND">
+												<div class="column spice">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/blackpepper.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/blackpepper.jpeg" /></a>
 														<div class="overlay">Black Pepper</div>
 												</div>
 												</div>
-												<div class="column WHOLE_AND_GROUND">
+												<div class="column spice">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/cardamom.jpg" /></a>
+														<a href="#" class="image centered"><img src="../images/cardamom.jpg" /></a>
 														<div class="overlay">Cardamom</div>
 												</div>
 												</div>
-												<div class="column WHOLE_AND_GROUND">
+												<div class="column spice">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/cloves.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/cloves.jpeg" /></a>
 														<div class="overlay">Cloves</div>
 												</div>
 												</div>
-												<div class="column WHOLE_AND_GROUND">	
+												<div class="column nature">	
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/cinnamon.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/cinnamon.jpeg" /></a>
 														<div class="overlay">Cinnamon</div>
 												</div>
 												</div>
-												<div class="column ESSENTIAL_OILS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/staranise.jpeg" /></a>
-														<div class="overlay">Star Anise</div>
+														<a href="#" class="image centered"><img src="../images/staranise.jpeg" /></a>
+														<div class="overlay">Staranise</div>
 												</div>
 												</div>
-												<div class="column ESSENTIAL_OILS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/nutmeg.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/nutmeg.jpeg" /></a>
 														<div class="overlay">Nutmeg</div>
 												</div>
 												</div>
-												<div class="column OLEORESINS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/mustard.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/poppyseed.jpeg" /></a>
+														<div class="overlay">Poppy Seed</div>
+												</div>
+												</div>
+												<div class="column nature">
+												<div class="col-6">
+														<a href="#" class="image centered"><img src="../images/mustard.jpeg" /></a>
 														<div class="overlay">Mustard</div>
 												</div>
 												</div>
-												<div class="column OLEORESINS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/fenugreek.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/fenugreek.jpeg" /></a>
 														<div class="overlay">Fenugreek</div>
 												</div>
 												</div>
-												<div class="column ESSENTIAL_OILS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/aniseed.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/aniseed.jpeg" /></a>
 														<div class="overlay">Ani Seed</div>
 												</div>
 												</div>
-												<div class="column ESSENTIAL_OILS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/cuminseed.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/cuminseed.jpeg" /></a>
 														<div class="overlay">Cumin Seed</div>
 												</div>
 												</div>
-												<div class="column TEAS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/dusttea.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/dusttea.jpeg" /></a>
 														<div class="overlay">Dust Tea</div>
 												</div>
 												</div>
-												<div class="column TEAS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/leaftea.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/leaftea.jpeg" /></a>
 														<div class="overlay">Leaf Tea</div>
 												</div>
 												</div>
-												<div class="column HERBAL_EXTRACTS">
+												<div class="column nature">
 												<div class="col-6">
-														<a href="#" class="image fit"><img src="../images/coffeebeans.jpeg" /></a>
+														<a href="#" class="image centered"><img src="../images/coffeebeans.jpeg" /></a>
 														<div class="overlay">Coffee Beans</div>
 												</div>
 												</div>
